@@ -2,7 +2,8 @@
 ## result so that when you need it again, it can be looked up from the
 ## cache
 
-## Write a short comment describing this function
+## makeCacheMatrix is a list of functions. It is able to set a matrix,
+## to get a matrix and set the inverse and get the inverse
 
 makeCacheMatrix <- function(x = matrix()) { #creates a list of functions
     inv <- NULL
@@ -19,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) { #creates a list of functions
 }
 
 
-## Write a short comment describing this function
+## cacheSolve conputes the inverse of a matrix. When a inverse has already
+## been set, then it will load the inverse from cache
 
 cacheSolve <- function(x, ...) {
     inv <- x$getInverse()
